@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+            background-color:pink; 
+            font-family: Helvetica; 
+            text-align: center;
+        }    
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: crimson;
+        }
+        input[type=text],input[type=Email]
+        {
+            width: 50%;
+            padding: 11px 20px;
+            margin: 6px 0;
+            box-sizing: border-box;
+            color: crimson;
+        }
+        input[type=password]
+        {
+            width: 50%;
+            padding: 11px 20px;
+            margin:6px 0;
+            box-sizing: border-box;
+            color: crimson;
+        }
+        input[type=submit]
+        {
+            width:50%
+            color:red;
+            padding:11px 20px;
+            margin:6px 0;
+            box-sizing: border-box;
+        }
+        input[type=radio]
+        {
+            width=10%;
+            padding: 5px 10px;
+            margin: 6px 3;
+            box-sizing: border-box;
+        }
+        label{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+  <form>
+    <h1>Login</h1>
+    <input type="text" placeholder="First name"/>
+    <input type="text" placeholder="Last name" />
+    <input type="Email" placeholder="Email" />
+    <input type="password" placeholder="password" />
+    <div>
+        <input type="radio" id="male" name="gender" /><label>Male</label>
+        <input type="radio" id="female" name="gender" /><label>Female</label>
+        <input type="radio" id="others" name="gender" /><label>others</label>
+    </div>
+    <input type="submit" name="submit" />
+  </form>  
+</body>
+</html>
