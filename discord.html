@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord|Your Place to Talk and Hang Out</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      .image-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .button {
+        position: absolute;
+        background-color: white;
+        color: black;
+        left: 90%;
+        top: 5%;
+        border-radius: 40px;
+        border-color: white;
+        width: 60px;
+        height: 35px;
+        font-family: "Helvetica";
+        font-size: medium;
+        box-shadow: none;
+      }
+      .img {
+        font-size: 30px;
+        top: 5%;
+        left: 5%;
+        color: white;
+        position: absolute;
+      }
+      .text-container {
+        position: absolute;
+        top: 5%;
+        left: 25%;
+      }
+      a {
+        font-family: "Helvetica";
+        font-weight: bold;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+        top: 25%;
+        left: 24%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 60px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+      }
+      .center {
+        position: absolute;
+        top: 40%;
+        left: 21%;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .button2 {
+        position: absolute;
+        background-color: white;
+        color: black;
+        left: 25%;
+        top: 75%;
+        border-radius: 40px;
+        border-color: white;
+        width: 270px;
+        height: 45px;
+        font-family: "Helvetica";
+        font-size: medium;
+        box-shadow: none;
+      }
+      .button3 {
+        position: absolute;
+        background-color: black;
+        color: white;
+        left: 50%;
+        top: 75%;
+        border-radius: 40px;
+        border-color: white;
+        width: 270px;
+        height: 45px;
+        font-family: "Helvetica";
+        font-size: medium;
+        box-shadow: none;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        column-gap: 5px;
+        padding: 4px;
+      }
+      .image {
+        top: 60%;
+        max-width: 20%;
+        max-height: 20%;
+        margin-left: 15%;
+      }
+      h2 {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      p {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .text4 {
+        margin-left: 20%;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .image2-container {
+        width: 85%;
+        height: 85%;
+        position: relative;
+        margin-left: 7%;
+      }
+      .new2 {
+        margin-left: 30%;
+        width: 40%;
+      }
+      .button4 {
+        background-color: hsl(240, 100%, 50%);
+        color: white;
+        margin-left: 40%;
+        border-radius: 40px;
+        border-color: white;
+        width: 270px;
+        height: 45px;
+        font-family: "Helvetica";
+        font-size: 20px;
+        box-shadow: none;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      footer {
+        margin-top: auto;
+        background-color: rgb(46, 49, 49);
+        color: white;
+        padding: 70px 0;
+        height: 100%;
+        width: 100%;
+      }
+      .containerf {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .footer-col {
+        width: 20%;
+        padding: 0 15px;
+      }
+      h4 {
+        color: rgb(49, 49, 158);
+        font-size: 20px;
+      }
+      option {
+        color: brown;
+      }
+      select {
+        color: white;
+        border-radius: 5px;
+      }
+      hr {
+        height: 1px;
+        background-color: blue;
+        border: none;
+      }
+      .last {
+        margin-top: 2px;
+        margin-left: 20px;
+      }
+      .last1 {
+        margin-left: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+        width: 90px;
+        height: 40px;
+        background-color: rgb(81, 81, 235);
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="C:\Users\ELCOT\OneDrive\Pictures\devps\IMG_20230903_115102 (1).png"
+        alt="Discord"
+        width="100%"
+        height="500px"
+      />
+      <div class="img" style="font-family: Helvetica">
+        <i class="fab fa-discord"> Discord</i>
+      </div>
+      <div class="text-container">
+        <a style="text-decoration: none" href="#">Download &nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Nitro &nbsp;&nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Discover &nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Discover &nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Safety &nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Support &nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Blog &nbsp;&nbsp;&nbsp;</a>
+        <a style="text-decoration: none" href="#">Careers &nbsp;&nbsp;</a>
+      </div>
+      <div class="centered">
+        <center>IMAGINE A PLACE...</center>
+      </div>
+      <button class="button">Login</button>
+      <div class="center">
+        <center>
+          <p>
+            ...where you can belong to a school club, a gaming group, or a
+            worldwide art community.<br />
+            Where just you and a handful of friends can spend time together.
+            <br />A place that makes it easy to talk every day and hang out more
+            often.
+          </p>
+        </center>
+      </div>
+      <button class="button2">
+        <i class="fa fa-download"></i> Download for Windows
+      </button>
+      <button class="button3">
+        <i class="fa fa-download"></i> open Discord in your browser
+      </button>
+    </div>
+    <div class="container">
+      <div class="image">
+        <img
+          class="new1"
+          src="C:\Users\ELCOT\OneDrive\Pictures\devps\IMG_20230903_084556.jpg"
+          width="550px"
+        />
+      </div>
+      <div class="text4">
+        <h2>
+          Create an invite-<br />only place where you<br />
+          belong
+        </h2>
+        <p>
+          Discord servers are organized into topic-based channels<br />
+          where you can collaborate, share, and just talk about your <br />day
+          without clogging up a group chat.
+        </p>
+      </div>
+    </div>
+    <div class="container" style="background-color: whitesmoke">
+      <div class="text4">
+        <h2>
+          Where hanging<br />
+          out is easy
+        </h2>
+        <p>
+          Grab a seat in a voice channel when you’re <br />free. Friends in your
+          server can see you’re around<br />
+          and instantly pop in to talk without having to call.
+        </p>
+      </div>
+      <div class="image">
+        <img
+          src="C:\Users\ELCOT\OneDrive\Pictures\devps\IMG_20230903_084622.jpg"
+          width="500px"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <div class="image">
+        <img
+          src="C:\Users\ELCOT\OneDrive\Pictures\devps\IMG_20230903_084641.jpg"
+          width="550px"
+        />
+      </div>
+
+      <div class="text4">
+        <h2>
+          From few to a<br />
+          fandom
+        </h2>
+        <p>
+          Get any community running with moderation tools<br />
+          and custom member access. Give members special powers,<br />
+          set up private channels, and more.
+        </p>
+      </div>
+      <br />
+    </div>
+    <div style="background-color: whitesmoke">
+      <br />
+      <br />
+      <h1><center>RELIABLE TECH FOR STAYING CLOSE</center></h1>
+      <h3>
+        Low-latency voice and video feels like you’re in the same room. Wave
+        hello over video, watch friends stream their <br />games, or gather up
+        and have a drawing session with screen share.
+      </h3>
+      <br />
+      <img
+        class="image2-container"
+        src="C:\Users\ELCOT\OneDrive\Pictures\devps\IMG_20230903_084700.jpg"
+      />
+    </div>
+    <div style="background-color: whitesmoke">
+      <img
+        class="new2"
+        src="C:\Users\ELCOT\OneDrive\Pictures\devps\WhatsApp Image 2023-09-03 at 4.28.29 PM.jpeg"
+      /><br /><br /><br />
+      <button class="button4">
+        <i class="fa fa-download"></i> Download for Windows</button
+      ><br />
+      <br />
+    </div>
+    <footer>
+      <div class="containerf">
+        <div class="row">
+          <div class="footer-col">
+            <select style="background: transparent">
+              <option value="1">English,USA</option>
+              <option value="2">Norwegian</option>
+              <option value="3">Polski</option>
+              <option value="4">Svenska</option>
+            </select>
+            <br />
+            <br />
+            <div class="social-links">
+              <a><i class="fab fa-twitter"></i></a>&nbsp;
+              <a><i class="fab fa-instagram"></i></a>&nbsp;
+              <a><i class="fab fa-facebook-square"></i></a>&nbsp;
+              <a><i class="fab fa-youtube"></i></a>&nbsp;
+              <a><i class="fab fa-tiktok"></i></a>&nbsp;
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <br />
+            <ul>
+              <li><a style="text-decoration: none" href="#">Download</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Nitro</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Status</a></li>
+              <br />
+              <li>
+                <a style="text-decoration: none" href="#">App Directory</a>
+              </li>
+              <br />
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <br />
+            <ul>
+              <li><a style="text-decoration: none" href="#">About</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Jobs</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Brand</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Newsroom</a></li>
+              <br />
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <br />
+            <ul>
+              <li><a style="text-decoration: none" href="#">College</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Support</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Safety</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Blog</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Feedback</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Developers</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">StreamKit</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Creators</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Community</a></li>
+              <br />
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Official 3rd Party Merch</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Policies</h4>
+            <br />
+            <ul>
+              <li><a style="text-decoration: none" href="#">Terms</a></li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Privacy</a></li>
+              <br />
+              <li>
+                <a style="text-decoration: none" href="#">Cookie Settings</a>
+              </li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Guideines</a></li>
+              <br />
+              <li>
+                <a style="text-decoration: none" href="#">Acknowledements</a>
+              </li>
+              <br />
+              <li><a style="text-decoration: none" href="#">Licenses</a></li>
+              <br />
+              <li>
+                <a style="text-decoration: none" href="#"
+                  >Company Information</a
+                >
+              </li>
+              <br />
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="last">
+        <a style="font-size: 20px"
+          ><i class="fab fa-discord"></i>&nbsp;Discord</a
+        >
+        <button class="last1">Sign up</button>
+      </div>
+    </footer>
+  </body>
+</html>
