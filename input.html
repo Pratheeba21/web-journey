@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login Form</h2>
+      <form onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" required /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        // Get values from inputs
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+
+        // Do something with the values (e.g., validate, send to server)
+        console.log("Name:", name);
+        console.log("Password:", password);
+
+        // Clear the form after submission (optional)
+        document.getElementById("name").value = "";
+        document.getElementById("password").value = "";
+      }
+    </script>
+  </body>
+</html>
